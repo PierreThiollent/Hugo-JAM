@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    {{ partial "head" . }}
-</head>
-<body>
-{{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<title>{{ .Title }}</title>
+	</head>
+	<body>
+		<header class="header">
+			<img src="../img/hugo-logo-wide.svg" class="header__logo" />
+			<nav class="header__menu menu">
+				<ul>
+					<li>
+						<a href="/">Accueil</a>
+					</li>
+					<li>
+						<a href="/mealthy">Projet Mealthy</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-<div style="margin:25px;">
-    <h1>{{.Title}}</h1>
-    <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-    <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-    <div style="font-size:18px;">{{.Content}}</div>
-</div>
-{{ partial "footer" . }}
-</body>
+		<div style="margin:25px;">
+			<h1>{{.Title}}</h1>
+			<div style="font-size:18px;">{{.Content}}</div>
+		</div>
+		{{ partial "footer" . }}
+	</body>
 </html>
