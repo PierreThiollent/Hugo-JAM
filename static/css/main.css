@@ -1,3 +1,8 @@
+.title {
+   text-align: center;
+   margin: 50px 0;
+}
+
 .summary {
 	display: flex;
 	justify-content: space-around;
@@ -9,4 +14,8 @@
     flex-direction: column;
     text-align: center;
     flex-basis: min-content;
+}
+
+#avantages {
+    margin: 80px 50px;
 }
