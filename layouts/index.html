@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		{{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
-		<h1 class="title">Veille technologique sur la JAMStack</h1>
+		<h1 class="title-1">Veille technologique sur la JAMStack</h1>
 		<ul class="summary">
 			<li class="summary__item">
 				<img src="img/j.svg" />
@@ -20,23 +20,40 @@
 			<li class="summary__item">
 				<img src="img/m.svg" />
 				<h2>Markdown</h2>
-				Utilisation du templating à l'aide du langage Markdown. Ces templates sont
+				Utilisation du templating à l'aide du langage Markdown.
 			</li>
 		</ul>
 		<div id="avantages">
-            <h2>Avantages de la technologie JAMstack :</h2>
-            <h3>Performances</h3>
+			<h2 class="title">Avantages de la technologie JAMstack :</h2>
+			<h3>Performances ⚡️</h3>
 			<p>
-				Cet technologie permet d'améliorer grandement les performances d'un site web. En effet, les pages du site sont générée de façon statique afin de les reservir au
+				Cet technologie permet d'améliorer grandement les performances d'un site web. En effet, les pages du site sont générée de façon statique afin de les servir au
 				visiteur de manière très rapide. Il n'y a aucun traitement côté serveur d'effectué lorsqu'un client demande une page.
 			</p>
-			<p>De plus, il est possible d'utiliser un CDN (Content Devlivery Network ou Réseau de livraison de contenu) qui permet de transmettre nos fichiers aux clients très rapidement.</p>
-            <p></p>
+			<p>
+				De plus, il est possible d'utiliser un CDN (Content Devlivery Network ou Réseau de livraison de contenu) qui permet de transmettre nos fichiers aux clients très
+				rapidement.
+			</p>
+			<p></p>
 
-            <h3>Sécurité</h3>
+			<h3>Sécurité 🔐</h3>
+			<p>
+				Le site web est beaucoup plus sécurisé avec l'utilisation de ces technologies car les pages du site sont statiques (html), cela rend donc plus difficile des
+				injections XSS
+			</p>
 
-            <h3>SEO</h3>
-        </div>
+			<h3>SEO 📊</h3>
+			<p>Avec des outils comme Hugo, Gatsby.js... nous obtenons de jolies URL sans avoir besoin d'effectuer de la réecriture côté serveur.</p>
+			<p>Le déploiement est très facile avec des outils comme Netlify.</p>
+		</div>
+
+		<div id="outils">
+			<h2 class="title">Utilisation d'un CMS ou d'outils comme Hugo ?</h2>
+			<p>
+				L'utilisation d'un CMS comme WordPress peut avoir plusieurs avantages. En effet, un des premiers avantages de WordPress est son interface d'administration, qui est
+				un outil très utile pour une personne qui ne sait pas écrire de code.
+			</p>
+		</div>
 		{{ partial "footer" . }}
 	</body>
 </html>
