@@ -1,4 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "fr-FR"
-title = "Veille technologique JAMstack"
+title = "JAMstack"
 theme = "ga-hugo-theme"
