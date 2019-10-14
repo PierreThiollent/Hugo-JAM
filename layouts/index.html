@@ -5,7 +5,23 @@
 	</head>
 	<body>
 		{{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
-		<h1 class="title-1">Veille technologique sur la JAMStack</h1>
+		<div id="resume">
+			<h1>Veille technologique sur la JAMStack</h1>
+			<p>
+				Le terme <b>JAMstack</b> désigne l'ensemble des technologies JavaScript, APIs et Markup ainsi qu'une manière de développer des sites web statiques sans base de
+				données.
+			</p>
+		</div>
+		<div id="exemples">
+			<div class="exemples__item">
+				<img src="img/site-classique.png" alt="Schéma de fonctionnement d'un site classique" />
+				<legend>Schéma de fonctionnement d'un site classique</legend>
+			</div>
+			<div class="exemples__item">
+				<img src="img/site-jam.png" alt="Schéma de fonctionnement d'un site JAM" />
+				<legend>Schéma de fonctionnement d'un site "JAM"</legend>
+			</div>
+		</div>
 		<ul class="summary">
 			<li class="summary__item">
 				<img src="img/j.svg" />
