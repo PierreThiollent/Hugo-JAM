@@ -24,14 +24,14 @@
     margin-top: 10px;
 }
 
-.summary {
+#summary {
 	display: flex;
 	justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
 }
 
-.summary__item {
+#summary .summary__item {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
