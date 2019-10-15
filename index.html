@@ -15,36 +15,85 @@
 	<body>
 		<header class="header">
 	<img src="img/hugo-logo-wide.svg" class="header__logo" />
-	<nav class="header__menu menu"></nav>
+	<nav class="header__menu">
+		<ul>
+			<li>
+				<a href="/">Accueil</a>
+			</li>
+			<li>
+				<a href="/mealthy">Projet Mealthy</a>
+			</li>
+		</ul>
+	</nav>
 </header>
 
-		<h1 class="title">Veille technologique sur la JAMStack</h1>
+		<div id="resume">
+			<h1>Veille technologique sur la JAMStack</h1>
+			<p>
+				Le terme <b>JAMstack</b> désigne l'ensemble des technologies JavaScript, APIs et Markup ainsi qu'une manière de développer des sites web statiques sans base de
+				données.
+			</p>
+		</div>
+		<div id="exemples">
+			<div class="exemples__item">
+				<img src="img/site-classique.png" alt="Schéma de fonctionnement d'un site classique" />
+				<legend>Schéma de fonctionnement d'un site classique</legend>
+			</div>
+			<div class="exemples__item">
+				<img src="img/site-jam.png" alt="Schéma de fonctionnement d'un site JAM" />
+				<legend>Schéma de fonctionnement d'un site "JAM"</legend>
+			</div>
+		</div>
 		<ul class="summary">
 			<li class="summary__item">
-                <img src="img/j.svg"/>
-                <h2>JavaScript</h2>
+				<img src="img/j.svg" />
+				<h2>JavaScript</h2>
 				Utilisation du langage JavaScript afin de dynamiser la page sans l'aide de langage dit côté serveur comme le PHP, Python, etc...
 			</li>
 			<li class="summary__item">
-                <img src="img/a.svg" />
-                <h2>API</h2>
+				<img src="img/a.svg" />
+				<h2>API</h2>
 				Les processus de base de données côté serveur sont déplacés sur des API réutilisables accessible en JavaScript.
 			</li>
 			<li class="summary__item">
-                <img src="img/m.svg" />
-                <h2>Markdown</h2>
-				Utilisation du templating à l'aide du langage Markdown. Ces templates sont 
+				<img src="img/m.svg" />
+				<h2>Markdown</h2>
+				Utilisation du templating à l'aide du langage Markdown.
 			</li>
 		</ul>
-		<div>
-			<h2>Avantages de la technologie JAMstack :</h2>
+		<div id="avantages">
+			<h2 class="title">Avantages de la technologie JAMstack :</h2>
+			<h3>Performances ⚡️</h3>
 			<p>
-				Cet technologie permet d'améliorer grandement les performances d'un site web. En effet, les pages du site sont générée de façon statique afin de les reservir au
+				Cet technologie permet d'améliorer grandement les performances d'un site web. En effet, les pages du site sont générée de façon statique afin de les servir au
 				visiteur de manière très rapide. Il n'y a aucun traitement côté serveur d'effectué lorsqu'un client demande une page.
+			</p>
+			<p>
+				De plus, il est possible d'utiliser un CDN (Content Devlivery Network ou Réseau de livraison de contenu) qui permet de transmettre nos fichiers aux clients très
+				rapidement.
+			</p>
+			<p></p>
+
+			<h3>Sécurité 🔐</h3>
+			<p>
+				Le site web est beaucoup plus sécurisé avec l'utilisation de ces technologies car les pages du site sont statiques (html), cela rend donc plus difficile des
+				injections XSS
+			</p>
+
+			<h3>SEO 📊</h3>
+			<p>Avec des outils comme Hugo, Gatsby.js... nous obtenons de jolies URL sans avoir besoin d'effectuer de la réecriture côté serveur.</p>
+			<p>Le déploiement est très facile avec des outils comme Netlify.</p>
+		</div>
+
+		<div id="outils">
+			<h2 class="title">Utilisation d'un CMS ou d'outils comme Hugo ?</h2>
+			<p>
+				L'utilisation d'un CMS comme WordPress peut avoir plusieurs avantages. En effet, un des premiers avantages de WordPress est son interface d'administration, qui est
+				un outil très utile pour une personne qui ne sait pas écrire de code.
 			</p>
 		</div>
 		<footer class="footer">
-	<p>Made with ❤️ by <a href="https://github.com/Simon-Lanos">Simon</a> and <a href="https://github.com/PierreThiollent">Pierre</a></p>
+	<p>Made with ❤️ by <a href="https://github.com/Simon-Lanos">Simon</a> and <a href="https://github.com/PierreThiollent">Pierre</a> with <img src="img/hugo-logo-wide.svg" src="Logo Hugo"/></img></p>
 </footer>
 
 	</body>
