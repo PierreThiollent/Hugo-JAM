@@ -68,4 +68,7 @@ Notre application est là pour vous accompagner puisque l’organisation est une
         <dd>ID Recipe</dd>
     </dl>
 </div>
+<div>
+    <img src="/img/schema.svg">
+</div>
 
