@@ -64,3 +64,13 @@
 	grid-template-columns: repeat(11, 0fr);
 
 }
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.caption {
+	flex: 1;
+	background: url(/img/schema.svg) no-repeat 50px 90px;
+}
