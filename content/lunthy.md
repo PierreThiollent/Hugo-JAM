@@ -51,8 +51,6 @@ Notre application est là pour vous accompagner puisque l’organisation est une
         </dl>
         <dl>
             <dt>⭐️ Table Grade</dt>
-            <dd>
-            </dd>
         </dl>
         <dl>
             <dt>💬 Table Comment</dt>
@@ -65,7 +63,6 @@ Notre application est là pour vous accompagner puisque l’organisation est une
         </dl>
         <dl>
             <dt>📷 📝 Table Photo Recipe</dt>
-            <dd>URL</dd>
             <dd>ID Recipe</dd>
         </dl>
     </div>
