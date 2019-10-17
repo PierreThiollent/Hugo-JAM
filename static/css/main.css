@@ -72,5 +72,10 @@
 
 .caption {
 	flex: 1;
-	background: url(/img/schema.svg) no-repeat 50px 90px;
+	background: url(../img/schema.svg) no-repeat;
+	background-size: contain;
+}
+
+.margin-top-30 {
+	margin-top: 30px;
 }
